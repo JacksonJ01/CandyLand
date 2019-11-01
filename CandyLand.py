@@ -1,7 +1,7 @@
 from random import *
 prize_list1 = ["candy", "cookies", "a three course meal"]
 prize_list2 = ["money", "a car", "a house"]
-position = [20]
+position = [1]
 # Landing on 13 sends you back 2 steps, landing on a 19 sends you back to tile 1
 
 
@@ -84,7 +84,7 @@ def candy_land():
 
         elif pick > pr:
             print("Okay your prizes are:")
-            print(prize_list2[0], "\b,", prize_list2[1],"\b, and", prize_list2[2])
+            print(prize_list2[0], "\b,", prize_list2[1], "\b, and", prize_list2[2])
             print("Have fun with those great prizes.")
             exit()
 

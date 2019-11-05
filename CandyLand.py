@@ -1,3 +1,7 @@
+# Markhus D. and Jared J.
+# 11/4/19
+# This is a group project between us 2 programmers. This game is inspired by CandyLand. HAVE FUN
+
 from random import *
 prize_list1 = ["candy", "cookies", "a three course meal"]
 prize_list2 = ["money", "a car", "a house"]

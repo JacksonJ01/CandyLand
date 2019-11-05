@@ -7,12 +7,15 @@ position = [1]
 
 def play():
     play1 = input(">>>").title()
-    if play1 == "Yes" or play1 == "Y" or "yes" or 'y':
+
+    if play1 == "Yes" or play1 == "Y":
         print("Alright, lettuce get this show on the road!")
         input("Press ENTER")
-    elif play1 == "No" or play1 == "N" or "n" or "no":
+
+    elif play1 == "No" or play1 == "N":
         print("Lml, noob!XD")
         exit()
+
     else:
         print("Yes or No answers please.")
         play()
@@ -33,8 +36,6 @@ def rules():
 
 
 def candy_land():
-    print("\n")
-    print(f">>You are now at tile {position[0]}<<")
 
     while position[0] <= 0:
         print("Game over!")
@@ -80,6 +81,7 @@ def candy_land():
         print("Pick a number between 1 and 8")
         pr = roll_dice()
         pick = int(input(">>>"))
+
         if pick < pr:
             print("Okay, your prizes are:")
             print(prize_list1[0], "\b,", prize_list1[1], "\b, and", prize_list1[2])
@@ -87,18 +89,17 @@ def candy_land():
             print("Would you like to play again?")
             again = input(">>>").title()
 
-            if again == "Yes" or again == "Y" or "y" or "yes":
+            if again == "Yes" or again == "Y":
                 print("Copy, let's do it again!")
                 position.clear()
                 position.append(1)
                 input("Press Enter")
                 candy_land()
+
             else:
-                print("""
-                Wow, what a loser!
-                Why would you not want to play again after losing?
-                I thought you had a gambling addiction!
-                """)
+                print("Wow, what a loser!")
+                print("Why would you not want to play again after losing?")
+                print("I thought you had a gambling addiction!")
                 exit()
 
         elif pick > pr:
@@ -108,18 +109,17 @@ def candy_land():
             print("Would you like to play again?")
             again = input(">>>").title()
 
-            if again == "Yes" or again == "Y" or "y" or "yes":
+            if again == "Yes" or again == "Y":
                 print("Copy, let's do it again!")
                 position.clear()
                 position.append(1)
                 input("Press Enter")
                 candy_land()
+
             else:
-                print("""
-                Wow, what a loser!
-                Why would you not want to play again after losing?
-                I thought you had a gambling addiction!
-                """)
+                print("Wow, what a loser!")
+                print("Why would you not want to play again after losing?")
+                print("I thought you had a gambling addiction!")
                 exit()
 
         else:
@@ -129,12 +129,13 @@ def candy_land():
             print("Would you like to play again?")
             again = input(">>>").title()
 
-            if again == "Yes" or again == "Y" or "y" or "yes":
+            if again == "Yes" or again == "Y":
                 print("Copy, let's do it again!")
                 position.clear()
                 position.append(1)
                 input("Press Enter")
                 candy_land()
+
             else:
                 print("""
                 Wow, what a loser!
